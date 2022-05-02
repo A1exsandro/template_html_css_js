@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,700;1,400&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*-------------- ROOT VARIABLES ------------*/
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-waarning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-raidus-3: 1.2rem;
+
+    --card_padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/*-------------- DARK THEME VARIABLES ------------*/
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-background);
+    color: var(--color-dark);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "item1 item2 item3 item4 item5"
+        "item6 item7 item8 item9 item10"
+        "item11 item12 item13 item14 item15"
+        "item16 item17 item18 item19 item20"
+        "item21 item22 item23 item24 item25"
+        "item26 item27 item28 item29 item30"
+        "last1 last2 last3 last4 last5"
+    ;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+a {
+    color: var(--color-dark)
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 0.87rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+h5 {
+    font-size: 0.77rem;
+}
+
+small {
+    font-size: 0.75rem;
+}
+
+.profile-photo {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted {
+    color: var(--color-info-dark);
+}
+
+p {
+    color: var(--color-dark-variant);
+}
+
+b {
+    color: var(--color-dark);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.warning {
+    color: var(--color-waarning);
+}
+
+.last1 {
+    grid-area: last1;
+}
+.last2 {
+    grid-area: last2;
+}
+.last3 {
+    grid-area: last3;
+}
+.last4 {
+    grid-area: last4;
+}
+.last5 {
+    grid-area: last5;
+}
+
+.update {
+    background: var(--color-white);
+    padding: var(--card_padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.every {
+    border: none;
+    background-color: rgb(0, 255, 115);
+}
+
+.item1 {
+    grid-area: item1;
+}
+.item2 {
+    grid-area: item2;
+}
+.item3 {
+    grid-area: item3;
+}
+.item4 {
+    grid-area: item4;
+}
+.item5 {
+    grid-area: item5;
+}
+.item6 {
+    grid-area: item6;
+}
+.item1 {
+    grid-area: item1;
+}
+.item7 {
+    grid-area: item7;
+}
+.item8 {
+    grid-area: item8;
+}
+.item9 {
+    grid-area: item9;
+}
+.item10 {
+    grid-area: item10;
+}
+.item11 {
+    grid-area: item11;
+}
+.item12 {
+    grid-area: item12;
+}
+.item13 {
+    grid-area: item13;
+}
+.item14 {
+    grid-area: item14;
+}
+.item15 {
+    grid-area: item15;
+}
+.item16 {
+    grid-area: item16;
+}
+.item17 {
+    grid-area: item17;
+}
+.item18 {
+    grid-area: item18;
+}
+.item19 {
+    grid-area: item19;
+}
+.item1 {
+    grid-area: item1;
+}
+.item20 {
+    grid-area: item20;
+}
+.item21 {
+    grid-area: item21;
+}
+.item22 {
+    grid-area: item22;
+}
+.item23 {
+    grid-area: item23;
+}
+.item24 {
+    grid-area: item24;
+}
+.item25 {
+    grid-area: item25;
+}
+.item26 {
+    grid-area: item26;
+}
+.item27 {
+    grid-area: item27;
+}
+.item28 {
+    grid-area: item28;
+}
+.item29 {
+    grid-area: item29;
+}
+.item30 {
+    grid-area: item30;
+}
