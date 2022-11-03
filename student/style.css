@@ -7,9 +7,10 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.6fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr 1.4fr 0.2fr;
     grid-template-areas: 
         "nav nav nav nav"
+        "month month month month"
         "row row row row"
         "footer footer footer footer"
     ;
@@ -27,6 +28,20 @@ nav{
     grid-area: nav;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+}
+
+.month {
+    grid-area: month;
+    background-color: blue;
+    color: aliceblue;
+}
+
+span {
+    border-radius: 50%;
+    color: blue;
+    font-size: 0.6rem;
+    margin-left: 1rem;
+    padding: 0.2rem;
 }
 
 .row {
