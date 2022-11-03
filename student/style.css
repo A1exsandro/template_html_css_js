@@ -54,6 +54,8 @@ span {
 .student {
     background-color: blue;
     color: aliceblue;
+    font-size: 0.6rem;
+    padding: 0.1rem;
 }
 
 .day {
